@@ -1,0 +1,23 @@
+<ion-card>
+    <ion-card-title>Triángulo</ion-card-title>
+      <ion-card-content>
+        <ion-img
+          src="https://yosoytuprofe.20minutos.es/wp-content/uploads/2019/09/area-y-per%C3%ADmetro-tri%C3%A1ngulo.png"
+          alt="El perímetro de un trángulo es la suma de las longitudes de sus tres lados. En otras palabras, es la medida total del contorno o borde del triángulo."> 
+      </ion-img> 
+    <ion-item>
+      <ion-label position="floating">Lado A (cm)</ion-label>
+      <ion-input type="number" [(ngModel)]="ladoA"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Lado B (cm)</ion-label>
+      <ion-input type="number" [(ngModel)]="ladoB"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Lado C (cm)</ion-label>
+      <ion-input type="number" [(ngModel)]="ladoC"></ion-input>
+    </ion-item>
+    <ion-button expand="block" (click)="calcularPerimetro()">Calcular el perímetro</ion-button>
+    <ion-label *ngIf="perimetro">El perímetro es {{ perimetro }} cm</ion-label>
+  </ion-card-content>
+</ion-card>

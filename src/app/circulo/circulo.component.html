@@ -1,0 +1,13 @@
+<ion-card>
+    <ion-card-title>Círculo</ion-card-title>
+  <ion-card-content>
+    <ion-img src="https://www.neurochispas.com/wp-content/uploads/2022/07/Formulas-del-perimetro-y-del-area-de-un-circulo.png"></ion-img>
+    <p>El perímetro de un círculo es la longitud de la línea que forma su borde.</p>
+    <ion-item>
+      <ion-label position="floating">Radio (cm)</ion-label>
+      <ion-input type="number" [(ngModel)]="radio"></ion-input>
+    </ion-item>
+    <ion-button expand="block" (click)="calcularPerimetro()">Calcular el perímetro</ion-button>
+    <ion-label *ngIf="perimetro">El perímetro es {{ perimetro }} cm</ion-label>
+  </ion-card-content>
+</ion-card>

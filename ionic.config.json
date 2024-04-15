@@ -1,0 +1,7 @@
+{
+  "name": "calculadora-de-perimetro",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}
